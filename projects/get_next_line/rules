@@ -1,0 +1,10 @@
+set_correction:ALL_INFORMATION
+set_rule:no_globals
+set_rule:all_flags
+do_test_strict_structure
+do_test_plagiat:*.c *.h
+do_analyse_date:*.h *.c
+do_test_norminette:*.h
+do_test_norminette:*.c
+do_test:test
+do_test:bonus

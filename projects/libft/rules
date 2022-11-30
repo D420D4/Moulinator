@@ -1,0 +1,14 @@
+set_correction:ALL_INFORMATION
+set_rule:no_globals
+set_rule:all_flags
+set_rule:no_libtool
+do_test_makefile:./Makefile
+do_test_plagiat:*.c *.h Makefile
+do_analyse_date:*.h *.c Makefile
+do_test_check_no_folder
+do_test_norminette:*.h
+do_test_norminette:*.c
+do_make_watch
+do_test:part_1
+do_test:part_2
+do_test:part_bonus
